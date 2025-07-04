@@ -1,13 +1,36 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+
+import React from 'react';
+import { ThemeProvider } from '@/components/ThemeProvider';
+import Header from '@/components/Header';
+import HeroSection from '@/components/HeroSection';
+import ProjectsSection from '@/components/ProjectsSection';
+import SkillsSection from '@/components/SkillsSection';
+import CertificatesSection from '@/components/CertificatesSection';
+import ContactSection from '@/components/ContactSection';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <ThemeProvider>
+      <div className="min-h-screen bg-background">
+        <Header />
+        <main>
+          <HeroSection />
+          <ProjectsSection />
+          <SkillsSection />
+          <CertificatesSection />
+          <ContactSection />
+        </main>
+        
+        {/* Footer */}
+        <footer className="py-8 border-t border-border bg-muted/30">
+          <div className="container mx-auto px-4 text-center">
+            <p className="text-muted-foreground">
+              © 2024 Kalivarapu Sheker. Built with React, Tailwind CSS, and lots of ☕
+            </p>
+          </div>
+        </footer>
       </div>
-    </div>
+    </ThemeProvider>
   );
 };
 
