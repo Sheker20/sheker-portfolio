@@ -77,7 +77,7 @@ const CertificatesSection = () => {
         <div className="text-center mt-12">
           <Badge variant="outline" className="text-lg px-4 py-2">
             <a 
-              href="https://smartinterviews.in/" 
+              href="https://smartinterviews.in/profile/sheker"
               target="_blank" 
               rel="noopener noreferrer"
               className="hover:text-primary transition-colors"
